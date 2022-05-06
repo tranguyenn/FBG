@@ -169,19 +169,27 @@
 
 #buyTicket h3 {
 	color: rgba(196, 255, 120, 1);
-	font-size: 4rem;
+	font-size: 2rem;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
 
 .buyTicket__left {
 	background-color: rgba(48, 57, 63, 0.7);
-	width: 70%;
+	width: 90%;
 	padding: 25px;
 	border-radius: 5px;
 	text-align: center;
 	margin: 0 auto;
 	padding-top: 40px;
+}
+
+.buyTicket__right div {
+	margin: 30px auto;
+}
+
+.buyTicket__right select {
+	margin: 0 auto;
 }
 
 .buyTicket__left input {
@@ -201,9 +209,10 @@
 	border-radius: 5px;
 	border: none;
 	padding: 7px 15px;
-	margin-bottom: 5px;
 	font-size: 1.5rem;
-	margin-bottom: 30px;
+	margin: 30px 0;
+	display: flex;
+	justify-content: center;
 }
 
 .ticketInfor {
@@ -235,7 +244,7 @@ h1 {
 .meetingSoi p {
 	padding-left: 60px;
 	position: relative;
-	font-size: 15px;
+	font-size: 1.5rem;
 	color: #338ffb;
 }
 
@@ -249,9 +258,23 @@ h1 {
 	width: 50px;
 	height: 2px;
 }
-.info-detail {
+.info-detail,
+.meetingSoi {
 	color: #ffffff;
-	width: 70%;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.info-detail p {
+	text-align: justify;
+}
+
+.info_pic img {
+	width: 80%;
+}
+.info_pic {
+	display: flex;
+	justify-content: center;
 }
 .info-detail h1 {
 	color: #ffffff;
@@ -272,5 +295,22 @@ h3 {
 		border-radius: 8px;
 		left: 0.01%;
 		padding: 0 15px;
+	}
+
+	#buyTicket h3,
+	#livestream h3 {
+		font-size: 4rem;
+	}
+
+	.buyTicket__right div {
+		margin: 10px auto;
+	}
+
+	.info-detail {
+		width: 70%;
+	}
+
+	.info_pic img {
+		width: 75%;
 	}
 }
