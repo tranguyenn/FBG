@@ -4,263 +4,273 @@
 
 /*font-family: 'Montserrat', sans-serif;*/
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-
 
 /*HEADER*/
 .header__menu li,
 .header__menu a,
 .header__menu button,
 .header__menu .logo {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: #FFFFFF;
-    font-size: 15px;
-    text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #ffffff;
+	font-size: 15px;
+	text-decoration: none;
 }
 
 .header__menu {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10vw;
-    background-color: rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10vw;
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .header__menu .nav_links {
-    list-style: none;
+	list-style: none;
 }
 
 .header__menu .nav__links li {
-    display: inline-block;
-    padding: 10px 20px;
+	display: inline-block;
+	padding: 10px 20px;
 }
 
 .header__menu .nav__links li a {
-    padding: 5px 5px;
-    transition: all 0.5s ease 0s;
+	padding: 5px 5px;
+	transition: all 0.5s ease 0s;
 }
 
 .header__menu .nav__links li a:hover {
-    color: #338FFB;
-    background-color: rgba(red, green, blue, alpha);
+	color: #338ffb;
+	background-color: rgba(red, green, blue, alpha);
 }
 
 #btnBuyTicket {
-    background-color: #FFFFFF;
-    border-radius: 3px;
-    outline: none;
-    transition: all 0.3s ease 0s;
-    padding: 6px 12px;
-    color: #338FFB;
+	background-color: #ffffff;
+	border-radius: 3px;
+	outline: none;
+	transition: all 0.3s ease 0s;
+	padding: 6px 12px;
+	color: #338ffb;
 }
 
 /* CAROUSEL */
 .carousel {
-    background-image: url('../Images/background-header.png');
-    background-size: cover;
-    height: 100vh;
-    background-position: center center;
-    color: #ffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
+	background-image: url('../Images/background-header.png');
+	background-size: cover;
+	height: 100vh;
+	background-position: center center;
+	color: #ffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
 }
 
 .meeting p {
-    padding-left: 60px;
-    position: relative;
-    font-size: 15px;
+	padding-left: 60px;
+	position: relative;
+	font-size: 15px;
 }
 
 .meeting p::before {
-    content: "";
-    display: block;
-    background-color: #FFFFFF;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 50px;
-    height: 2px;
+	content: '';
+	display: block;
+	background-color: #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 50px;
+	height: 2px;
 }
 
 .soi {
-    font-size: 100px;
+	font-size: 100px;
 }
 
 .slogan {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 .carousel__contact {
-    position: absolute;
-    transform: rotate(90deg);
-    padding: 5px 5px;
-    background-color: rgba(91, 91, 91, 0.9);
-    border-radius: 8px;
-    left: 0.01%;
-    padding: 0 15px;
+	display: none;
 }
 
 .carousel__contact i {
-    transform: rotate(-90deg);
-    margin: 5px;
+	transform: rotate(-90deg);
+	margin: 5px;
 }
 
 .carousel__scrolldown {
-    position: absolute;
-    text-align: center;
-    bottom: 5%;
-    font-size: 10px;
+	position: absolute;
+	text-align: center;
+	bottom: 5%;
+	font-size: 10px;
 }
 
 .content {
-    background-image: url('../Images/backgound-body.png');
-    background-size: cover;
+	background-image: url('../Images/backgound-body.png');
+	background-size: cover;
 }
 
 .livestream__pic {
-    width: 100%;
+	width: 100%;
 }
 
 #livestream h3 {
-    color: rgba(196, 255, 120, 1);
-    font-size: 4rem;
-    margin-top: 15px;
-    margin-bottom: 15px;
+	color: rgba(196, 255, 120, 1);
+	font-size: 2rem;
 }
 
 #livestream {
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    font-size: 1.5rem;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-size: 1.5rem;
 }
 
 .inputCode {
-    padding: 35px 100px 0px 10px;
+	padding: 35px 100px 0px 10px;
 }
 
 .livestream__inputCode {
-    border-radius: 5px;
-    border: none;
-    padding: 7px 15px;
-    margin-bottom: 5px;
-    width: 100%;
+	border-radius: 5px;
+	border: none;
+	padding: 7px 15px;
+	margin-bottom: 5px;
+	width: 100%;
 }
 
 .livestream__inputCode::placeholder {
-    color: black;
+	color: black;
 }
 
 .inputCode .btn-primary {
-    margin-top: 15px;
-    background-color: rgba(51, 143, 251, 1);
-    font-size: 1.5rem;
+	margin-top: 15px;
+	background-color: rgba(51, 143, 251, 1);
+	font-size: 1.5rem;
 }
 
 .line {
-    height: 1px;
-    background-color: rgba(196, 255, 120, 1);
-    margin-top: 5%;
-    margin: 5% auto;
-    width: 80%;
-    text-align: center;
+	height: 1px;
+	background-color: rgba(196, 255, 120, 1);
+	margin-top: 5%;
+	margin: 5% auto;
+	width: 80%;
+	text-align: center;
 }
 
 #buyTicket h3 {
-    color: rgba(196, 255, 120, 1);
-    font-size: 4rem;
-    margin-top: 15px;
-    margin-bottom: 15px;
+	color: rgba(196, 255, 120, 1);
+	font-size: 4rem;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .buyTicket__left {
-    background-color: rgba(48, 57, 63, 0.7);
-    width: 70%;
-    padding: 25px;
-    border-radius: 5px;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 40px;
+	background-color: rgba(48, 57, 63, 0.7);
+	width: 70%;
+	padding: 25px;
+	border-radius: 5px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 40px;
 }
 
 .buyTicket__left input {
-    width: 100%;
-    height: 50px;
-    border-radius: 8px;
-    border: none;
+	width: 100%;
+	height: 50px;
+	border-radius: 8px;
+	border: none;
 }
 
 .buyTicket__left input::placeholder {
-    padding-left: 15px;
-    font-weight: 500;
+	padding-left: 15px;
+	font-weight: 500;
 }
 
 .buyTicket__select {
-    width: 60%;
-    border-radius: 5px;
-    border: none;
-    padding: 7px 15px;
-    margin-bottom: 5px;
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+	width: 60%;
+	border-radius: 5px;
+	border: none;
+	padding: 7px 15px;
+	margin-bottom: 5px;
+	font-size: 1.5rem;
+	margin-bottom: 30px;
 }
 
 .ticketInfor {
-    background-color: #FFFFFF;
-    width: 60%;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
+	background-color: #ffffff;
+	width: 60%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 8px;
 }
 
 .ticketInfor h4,
 h1 {
-    color: #338FFB;
-    font-weight: bold;
+	color: #338ffb;
+	font-weight: bold;
 }
 
 .ticketInfor h1 {
-    font-size: 3rem;
-    font-weight: bolder;
-    margin: 5px 0;
+	font-size: 3rem;
+	font-weight: bolder;
+	margin: 5px 0;
 }
 
 .ticketInfor .btnSignup {
-    padding: 5px 4rem;
-    background-color: #338FFB;
-    font-size: 1.5rem;
-    font-weight: bold;
+	padding: 5px 4rem;
+	background-color: #338ffb;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 .meetingSoi p {
-    padding-left: 60px;
-    position: relative;
-    font-size: 15px;
-    color:#338FFB;
+	padding-left: 60px;
+	position: relative;
+	font-size: 15px;
+	color: #338ffb;
 }
 
 .meetingSoi p::before {
-    content: "";
-    display: block;
-    background-color: #338FFB;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 50px;
-    height: 2px;
+	content: '';
+	display: block;
+	background-color: #338ffb;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 50px;
+	height: 2px;
 }
-.info-detail{
-    color: #FFFFFF;
-    width: 70%;
+.info-detail {
+	color: #ffffff;
+	width: 70%;
 }
-.info-detail h1{
-    color: #FFFFFF;
+.info-detail h1 {
+	color: #ffffff;
+}
+
+h3 {
+	padding-top: 50px;
+	padding-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+	.carousel__contact {
+		display: block;
+		position: absolute;
+		transform: rotate(90deg);
+		padding: 5px 5px;
+		background-color: rgba(91, 91, 91, 0.9);
+		border-radius: 8px;
+		left: 0.01%;
+		padding: 0 15px;
+	}
 }
